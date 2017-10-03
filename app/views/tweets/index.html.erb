@@ -1,0 +1,23 @@
+
+<p id="notice"><%= notice %></p>
+
+<h1>All Tweets</h1>
+
+<h2>Random Tweet: <%= @random_tweet_body %></h2>
+
+<center>
+<% @tweets.each do |tweet| %>
+<div class="jumbotron"style="max-width: 7000px">
+
+<h3><%= 'Posted by ' + tweet.user %></h3>
+    <p><%= tweet.body %></p>
+  
+</div>
+<% end %>
+</center>
+<br>
+
+<%= link_to 'Create New Tweet', new_tweet_path %>
+
+
+
