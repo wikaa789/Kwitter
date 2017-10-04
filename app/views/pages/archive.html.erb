@@ -1,0 +1,17 @@
+<h1>Pages#archive</h1>
+
+
+<p>Find me in app/views/pages/archive.html.erb</p>
+
+
+<center>
+<% @tweets.each do |tweet| %>
+<div class="jumbotron"style="max-width: 7000px">
+
+<h3><%=  tweet.user + ' posted this'%></h3>
+    <p><%= tweet.body %></p>
+
+</div>
+<% end %>
+</center>
+<br>
